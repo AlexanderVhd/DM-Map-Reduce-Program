@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "sequential-map-reduce", "DM_Assignment_2\sequential-map-reduce.pyproj", "{6051CED8-3BE8-41F5-88ED-5E5C81C0CA36}"
-EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "parallel-map-reduce", "parallel-map-reduce\parallel-map-reduce.pyproj", "{8BE5CC75-EB8E-465C-A4CF-ED948B7E89B3}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "tweet-counter", "DM_Assignment_2\tweet-counter.pyproj", "{6051CED8-3BE8-41F5-88ED-5E5C81C0CA36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +13,6 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{6051CED8-3BE8-41F5-88ED-5E5C81C0CA36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6051CED8-3BE8-41F5-88ED-5E5C81C0CA36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8BE5CC75-EB8E-465C-A4CF-ED948B7E89B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BE5CC75-EB8E-465C-A4CF-ED948B7E89B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,12 +6,12 @@
     <ProjectGuid>6051ced8-3be8-41f5-88ed-5e5c81c0ca36</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>sequential-map-reduce.py</StartupFile>
+    <StartupFile>tweet-counter.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>sequential-map-reduce</Name>
+    <Name>tweet-counter</Name>
     <RootNamespace>DM_Assignment_2</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -23,7 +23,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="sequential-map-reduce.py" />
+    <Compile Include="parallel_map_reduce.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="sequential_map_reduce.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="tweet-counter.py" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,12 +1,9 @@
 import sys
 import csv
-import codecs
 import re
 import collections
 import time
 
-#set default encoding for all output in utf-8
-sys.stdout = codecs.getwriter("utf-8")(sys.stdout.detach())
 
 #reduce function that returns top 20 most frequent words
 def reduce(wordList):
@@ -50,8 +47,8 @@ def readFile(filepath):
     return tweetWords
 
 
-def main():
-
+def sequentialMapReduce():
+    
     #read file 
     path = 'C:\\Users\\Taymoor\\Software Projects\\Project Data\\Donald-Tweets!.csv'
     wordList = readFile(path)
@@ -63,25 +60,23 @@ def main():
     mapped = mapWords(wordList)
 
     #reduce 
-    reduced = reduce(mapped)
+    reduced = reduce(mapped) 
     
     #end timer
     progTime = time.clock() - startTime
 
 
     print("\n\t\t\t\t\t\tSEQUENTIAL MAP REDUCE\n")
-    print('Donald Trumps Top 20 Tweet Words by Frequency\n')
+    print('Trumps Top 20 Tweet Words by Frequency\n')
 
-    #I assume you didn't want the frequency of every word in the file so I just gave the top 20 most frequent words in the file
     for wordFreq in reduced:
         print('%-*s: %4s' % (10, wordFreq[0], wordFreq[1]))
     
     #print time taken for program to complete
-    #progTime = time.clock() - startTime
     print("\nTime Taken: %s seconds\n" % (progTime))
     
 
 
-if __name__ == "__main__":
-    main()
+
+
 
