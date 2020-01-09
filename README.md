@@ -7,7 +7,7 @@ Distributed Solution: I used multiprocessing instead of Hadoop for the solution 
 class to map the sublists. I used pool.imap_unordered instead of pool.map since the it makes the processes independant and doesn't wait for the other processes' results to execute which makes it slightly faster than pool.map 
 
 User selects their counting method
-![image](https://user-images.githubusercontent.com/34779092/72037145-172dfa00-326b-11ea-9961-3702d400e1c2.png)
+![image](https://user-images.githubusercontent.com/34779092/72037533-89eba500-326c-11ea-89a1-0719a81a1476.png)
 
 User selects sequential method
 ![image](https://user-images.githubusercontent.com/34779092/72037398-03cf5e80-326c-11ea-8969-cf4eb5e7e29d.png)
